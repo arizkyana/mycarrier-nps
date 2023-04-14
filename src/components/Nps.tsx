@@ -12,9 +12,10 @@ import {
 } from "@mui/material";
 import { ChevronLeft, LanguageOutlined } from "@mui/icons-material";
 
-const Nps: React.FC = () => {
+function Nps() {
   return (
     <Box
+      component={"form"}
       sx={{
         width: "100%",
         height: "100vh"
@@ -189,7 +190,7 @@ const Nps: React.FC = () => {
       </Box>
     </Box>
   );
-};
+}
 
 const theme = createTheme({
   palette: {
